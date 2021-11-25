@@ -1,0 +1,135 @@
+<mat-grid-list cols="2" rowHeight="2:1">
+  <mat-grid-tile>
+    <h1>Frango Grelhado</h1>
+    <mat-accordion>
+      <mat-expansion-panel
+        (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false"
+      >
+        <mat-expansion-panel-header>
+          <mat-panel-title> Receita </mat-panel-title>
+          <mat-panel-description>
+            {{ panelOpenState ? "fechar" : "abrir" }}
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <li *ngFor="let item of ingredientes">
+          {{ item.name }}
+        </li>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <mat-accordion>
+      <mat-expansion-panel
+        (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false"
+      >
+        <mat-expansion-panel-header>
+          <mat-panel-title> Preparo </mat-panel-title>
+          <mat-panel-description>
+            {{ panelOpenState ? "fechar" : "abrir" }}
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <li *ngFor="let item of preparo">
+          {{ item.name }}
+        </li>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <img src="assets/img/frango-grelhado.jpg" />
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <h1>Frango Cremoso</h1>
+    <mat-accordion>
+      <mat-expansion-panel
+        (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false"
+      >
+        <mat-expansion-panel-header>
+          <mat-panel-title> Receita </mat-panel-title>
+          <mat-panel-description>
+            {{ panelOpenState ? "fechar" : "abrir" }}
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <li></li>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <mat-accordion>
+      <mat-expansion-panel
+        (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false"
+      >
+        <mat-expansion-panel-header>
+          <mat-panel-title> Preparo </mat-panel-title>
+          <mat-panel-description>
+            {{ panelOpenState ? "fechar" : "abrir" }}
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <li></li>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <img src="assets/img/frango-cremoso.jpg" />
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <h1>Frango a Parmegiana</h1>
+    <mat-accordion>
+      <mat-expansion-panel
+        (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false"
+      >
+        <mat-expansion-panel-header>
+          <mat-panel-title> Receita </mat-panel-title>
+          <mat-panel-description>
+            {{ panelOpenState ? "fechar" : "abrir" }}
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <li></li>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <mat-accordion>
+      <mat-expansion-panel
+        (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false"
+      >
+        <mat-expansion-panel-header>
+          <mat-panel-title> Preparo </mat-panel-title>
+          <mat-panel-description>
+            {{ panelOpenState ? "fechar" : "abrir" }}
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <li></li>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <img src="assets/img/frango-parmegiana.jpg" />
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <h1>Torta de Frango</h1>
+    <mat-accordion>
+      <mat-expansion-panel
+        (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false"
+      >
+        <mat-expansion-panel-header>
+          <mat-panel-title> Receita </mat-panel-title>
+          <mat-panel-description>
+            {{ panelOpenState ? "fechar" : "abrir" }}
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <li></li>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <mat-accordion>
+      <mat-expansion-panel
+        (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false"
+      >
+        <mat-expansion-panel-header>
+          <mat-panel-title> Preparo </mat-panel-title>
+          <mat-panel-description>
+            {{ panelOpenState ? "fechar" : "abrir" }}
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <li></li>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <img src="assets/img/torta-frango.jpg" />
+  </mat-grid-tile>
+</mat-grid-list>
+<router-outlet></router-outlet>

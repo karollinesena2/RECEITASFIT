@@ -1,0 +1,41 @@
+mat-grid-list {
+    display:flex;
+}
+
+mat-grid-tile {
+    background-color: #B0D2B8;
+
+
+    img {
+        margin: 10px;
+        max-width: 40% ;
+        max-height: 30%;
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: 5px 5px 5px 5px  #201f1f36 ;
+
+       
+    }
+    
+    h1 {
+        margin: 100px;
+        font-size:20px;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+mat-panel-title {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+mat-expansion-panel-header{
+    background-color:#b0d2b886 ;
+    font-size: 13px;
+  
+}
+p {
+    font-size: 10px;
+}
+
+li {
+    font-size: 13px;
+}
+}
+
+
